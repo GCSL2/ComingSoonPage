@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "ComingSoon";
+  src: url("./assets/font.otf") format("opentype");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #191a1c;
+}
+
+header {
+  color: #fff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  display: flex;
+}
+
+header p:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+header img:first-child {
+  width: 10em;
+  height: 100px;
+  margin: 0 40px;
+}
+
+header img:last-child {
+  width: 10em;
+  height: 100px;
+  margin: 0 40px;
+}
+
+.mainContainer {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "ComingSoon", sans-serif;
+  font-size: 80px;
+  font-weight: 600;
+  background-image: url(https://media0.giphy.com/media/l4FGm5Sy9OYaqEvi8/giphy.gif?cid=ecf05e47ihw4kddv21x4e9rxy79umlxazqml5zwj3744immz&ep=v1_gifs_related&rid=giphy.gif&ct=g);
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 120px;
+  margin: 0px;
+  text-align: center;
+  line-height: 120px;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0px;
+}
+
+img {
+  width: 190px;
+  height: 100px;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #191a1c;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer img {
+  width: 10em;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+footer div {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: last baseline;
+  padding-bottom: 10px;
+}
+
+footer div a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 1.2em;
+}
+
+footer p {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 768px) {
+  header {
+  }
+
+  header p {
+    margin: 10px 0;
+  }
+
+  header img {
+    margin: 10px 0;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  footer div a {
+    margin: 5px 0;
+  }
+}
