@@ -5,24 +5,18 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
   margin: 0;
   padding: 0;
   background-color: #191a1c;
 }
 
 header {
-  color: #fff;
-  padding: 10px 0;
+  color: #fff;;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,6 +54,8 @@ header img:last-child {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -72,7 +68,8 @@ h1 {
   -moz-background-clip: text;
   -webkit-background-clip: text;
   font-size: 120px;
-  margin: 0px;
+  margin: 0;
+  padding: 0;
   text-align: center;
   line-height: 120px;
 }
@@ -129,22 +126,30 @@ footer p {
 }
 
 @media (max-width: 768px) {
-  header {
+
+  header img:first-child {
+    width: 3em;
+  }
+
+  header img:last-child {
+    width: 7em;
   }
 
   header p {
-    margin: 10px 0;
+    display: none;
   }
 
-  header img {
-    margin: 10px 0;
+  .mainContainer {
+    height: fit-content;
+    height: 20px; 
   }
 
-  h1 {
-    text-align: center;
+  h1{
+    font-size: 70px;
+    background-color: red;
   }
 
-  footer div a {
-    margin: 5px 0;
+  p{
+    font-size: 15px;
   }
 }
