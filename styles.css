@@ -223,7 +223,6 @@ button{
   padding: 6px 10px;
   opacity: 1;
   transition: 0.2s;
-  min-width: 35px;
   border-radius: 15px;
 }
 button:hover{
@@ -260,8 +259,7 @@ button:hover{
 }
 .modal-header{
   display: flex;  
-  justify-content: space-between;
-  margin: 10px;
+  margin-bottom: 10px;
 }
 
 h2{  
@@ -282,4 +280,13 @@ a{
     padding: 6px 10px;
     text-decoration: none;
     background-color: crimson;
+}
+#close-modal{
+  margin-right: .5em;
+  text-align: center;
+}
+#texto{
+margin-left: 7.5em;
+color: white;
+
 }
