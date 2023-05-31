@@ -248,10 +248,10 @@ button:hover{
   top: 50%;
   z-index: 10; 
   transform: translate(-50%, -50%);
-  width: 500px;
+  width: 700px;
   max-width: 90%;
   background-color: #333131;
-  pad: 1.2rem ;
+  padding: 1.2rem ;
   border-radius: 20px;
 }
 #modal.hide{
@@ -271,7 +271,9 @@ h2{
   pointer-events: none;
 }
 #equipe{
-  width: 500px;
+  width: 700px;
+  max-width: 90%;
+  margin-left: auto;
 }
 a{
     
@@ -279,14 +281,20 @@ a{
     cursor: pointer;
     padding: 6px 10px;
     text-decoration: none;
-    background-color: crimson;
+    
+}
+#open-modal{
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
 }
 #close-modal{
   margin-right: .5em;
   text-align: center;
 }
 #texto{
-margin-left: 7.5em;
+margin: auto;
+padding-top: 0.5em;
+padding-bottom: 0.5em;
 color: white;
 
 }
