@@ -21,6 +21,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 90px;
+  margin: 0 20px 0 20px;
 }
 
 header p {
@@ -29,26 +31,17 @@ header p {
   color: #fff;
   text-decoration: none;
   font-size: 1.2em;
-  display: flex;
 }
 
 header p:hover {
-  color: #fff;
+  color: #e41a1a;
   text-decoration: none;
   cursor: pointer;
 }
 
 header img:first-child {
   width: 4em;
-  margin: 0 40px;
 }
-
-header img:last-child {
-  width: 10em;
-  height: 100px;
-  margin: 0 40px;
-}
-
 .mainContainer {
   flex-grow: 1;
   display: flex;
@@ -59,9 +52,8 @@ header img:last-child {
   padding: 0;
 }
 
-h1 {
+.mainContainer h1 {
   font-family: "ComingSoon", sans-serif;
-  font-size: 80px;
   font-weight: 600;
   background-image: url(https://media0.giphy.com/media/l4FGm5Sy9OYaqEvi8/giphy.gif?cid=ecf05e47ihw4kddv21x4e9rxy79umlxazqml5zwj3744immz&ep=v1_gifs_related&rid=giphy.gif&ct=g);
   background-size: cover;
@@ -75,12 +67,12 @@ h1 {
   line-height: 120px;
 }
 
-a {
+.mainContainer a {
   text-decoration: none;
   color: #fff;
 }	
 
-p {
+.mainContainer p {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -90,7 +82,7 @@ p {
   margin-bottom: 20px;
 }
 
-.button {
+.mainContainer .button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,8 +97,7 @@ p {
   text-decoration: none !important;
 }
 
-.lable {
-  margin-top: 1px;
+.mainContainer .label {
   font-size: 19px;
   line-height: 22px;
   color: #ffffff;
@@ -177,8 +168,9 @@ footer div a {
 }
 
 footer div a:hover {
-  color: #FF6347; /* Você pode alterar para qualquer cor de sua escolha */
-  transform: scale(1.1); /* Aqui estamos aumentando ligeiramente o tamanho do link */
+  color: #e41a1a;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 
@@ -212,7 +204,7 @@ footer div a:hover {
 }
 
 
-button{
+/* button{
   box-sizing: border-box;
   display: block;
   margin: 20px auto;
@@ -242,13 +234,15 @@ button:hover{
   background-color: rgba(0, 0, 0, .5);
   z-index: 5;
 }
+*/
+
 #modal {
   position: fixed;
   left: 50%;
   top: 50%;
   z-index: 10; 
   transform: translate(-50%, -50%);
-  width: 700px;
+  width: auto;
   max-width: 90%;
   background-color: #333131;
   padding: 1.2rem ;
@@ -259,12 +253,71 @@ button:hover{
 }
 .modal-header{
   display: flex;  
-  margin-bottom: 10px;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
 }
 
-h2{  
+.modal-header h2{  
   font-family: "ComingSoon", sans-serif;
+  color: #fff;
 }
+
+.modal-header i {
+  color: black;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+  width: 15px;
+  height: 15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.teamContainer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.memberContainer{
+  display: flex;
+  text-align: center;
+  background-color: black;
+}
+
+.memberContainer img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.memberInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.memberInfo h1, p{
+  margin: 0;
+}
+
+.memberInfo h1{
+  background-color: gray;
+  width: 8.2em;
+  border-radius: 10px;
+}
+
+
+/*
 #modal.hide,
 #fade.hide{
   opacity: 0;
