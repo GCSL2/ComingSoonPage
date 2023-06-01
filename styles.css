@@ -204,7 +204,7 @@ footer div a:hover {
 }
 
 
-/* button{
+.modal-body > button{
   box-sizing: border-box;
   display: block;
   margin: 20px auto;
@@ -234,7 +234,7 @@ button:hover{
   background-color: rgba(0, 0, 0, .5);
   z-index: 5;
 }
-*/
+
 
 #modal {
   position: fixed;
@@ -266,7 +266,7 @@ button:hover{
 .modal-header i {
   color: black;
   cursor: pointer;
-  background-color: white;
+  background-color: crimson;
   border-radius: 50%;
   padding: 5px;
   width: 15px;
@@ -276,21 +276,31 @@ button:hover{
   align-items: center;
   text-align: center;
 }
+.modal-header > button{
+  background-color: crimson;
+  border-radius: 20px;
+}
 
 .teamContainer{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 10px;
+  position: relative;
   color: white;
   font-family: "Poppins", sans-serif;
   text-align: center;
+  padding: auto;
+  height: 600px;
 }
 
 .memberContainer{
   display: flex;
   text-align: center;
   background-color: black;
+  margin: auto;
+  padding: 10px;
+  border-radius: 20px;
 }
 
 .memberContainer img{
@@ -304,6 +314,7 @@ button:hover{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 
 .memberInfo h1, p{
@@ -315,9 +326,9 @@ button:hover{
   width: 8.2em;
   border-radius: 10px;
 }
-
-
-/*
+.memberInfo > p{
+  background-color: rgb(4, 210, 4);
+}
 #modal.hide,
 #fade.hide{
   opacity: 0;
@@ -329,7 +340,7 @@ button:hover{
   margin-left: auto;
 }
 a{
-    
+    font-family: "ComingSoon", sans-serif;
     color: black;
     cursor: pointer;
     padding: 6px 10px;
