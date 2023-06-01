@@ -252,21 +252,22 @@ button:hover{
   top: 0%;
 }
 .modal-header{
-  display: flex;  
+  height: 50px;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
 }
 
 .modal-header h2{  
-  font-family: "ComingSoon", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #fff;
+  margin: 0;
 }
 
 .modal-header i {
   color: black;
   cursor: pointer;
-  background-color: crimson;
+  background-color: rgb(255, 255, 255);
   border-radius: 50%;
   padding: 5px;
   width: 15px;
@@ -275,10 +276,6 @@ button:hover{
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-.modal-header > button{
-  background-color: crimson;
-  border-radius: 20px;
 }
 
 .teamContainer{
@@ -291,19 +288,20 @@ button:hover{
   font-family: "Poppins", sans-serif;
   text-align: center;
   padding: auto;
-  height: 600px;
+  height: 400px;
 }
 
 .memberContainer{
   display: flex;
   text-align: center;
-  background-color: black;
+  background-color: rgb(0, 0, 0, 0.5);
   margin: auto;
-  padding: 10px;
-  border-radius: 20px;
+  border-radius: 52px 20px 20px 52px;
 }
 
 .memberContainer img{
+  padding: 0;
+  margin: 0;
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -312,9 +310,32 @@ button:hover{
 .memberInfo{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  text-align: left;
+  justify-content: space-around;
+}
+
+.containerRole{
+  display: flex;
+  background-color: rgb(46, 204, 113, 0.5);
+  width: fit-content;
+  padding: 2px;
+  padding-right: 12px;
+  padding-left: 12px;
+  border-radius: 10px;
   align-items: center;
-  margin: auto;
+}
+
+.circleRole{
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  background-color: #2ECC71;
+  margin-right: 5px;
+  justify-content: center;
+}
+
+.memberInfo h1{
+  text-align: center;
 }
 
 .memberInfo h1, p{
@@ -326,9 +347,10 @@ button:hover{
   width: 8.2em;
   border-radius: 10px;
 }
-.memberInfo > p{
-  background-color: rgb(4, 210, 4);
+.memberInfo p{
+  /* background-color: rgb(4, 210, 4); */
 }
+
 #modal.hide,
 #fade.hide{
   opacity: 0;
@@ -340,8 +362,10 @@ button:hover{
   margin-left: auto;
 }
 a{
-    font-family: "ComingSoon", sans-serif;
-    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600px;
+    font-size: 1.2em;
+    color: rgb(255, 255, 255);
     cursor: pointer;
     padding: 6px 10px;
     text-decoration: none;
@@ -355,10 +379,10 @@ a{
   margin-right: .5em;
   text-align: center;
 }
-#texto{
+/* #texto{
 margin: auto;
 padding-top: 0.5em;
 padding-bottom: 0.5em;
 color: white;
 
-}
+} */
