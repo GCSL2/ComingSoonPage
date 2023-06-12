@@ -30,7 +30,7 @@ header p {
   font-weight: 200;
   color: #fff;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 0.9em;
 }
 
 header p:hover {
@@ -163,7 +163,7 @@ footer div a {
   color: #fff;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
-  font-size: 1.2em;
+  font-size: 0.9em;
   font-weight: 200;
 }
 
@@ -180,25 +180,17 @@ footer div a:hover {
     width: 3em;
   }
 
-  header img:last-child {
-    width: 7em;
-  }
-
-  header p {
-    display: none;
-  }
-
   .mainContainer {
     height: fit-content;
     height: 20px; 
   }
 
-  h1{
+  .mainContainer h1{
     font-size: 70px;
     background-color: red;
   }
 
-  p{
+  .mainContainer p{
     font-size: 15px;
   }
 }
@@ -310,7 +302,8 @@ button:hover{
   flex-direction: column;
   text-align: left;
   justify-content: space-around;
-  padding: auto;
+  width: 200px;
+  margin-left: 2px;
 }
 
 .devRole{
@@ -319,7 +312,7 @@ button:hover{
   width: fit-content;
   padding: 2px;
   padding-right: 12px;
-  padding-left: 12px;
+  padding-left: 7px;
   border-radius: 10px;
   align-items: center;
   margin-right: 5px;
@@ -376,6 +369,8 @@ button:hover{
 
 .memberInfo h1{
   text-align: left;
+  font-size: 20px;
+  height: 20px;
 }
 
 .memberInfo h1, p{
@@ -383,7 +378,6 @@ button:hover{
 }
 
 .memberInfo h1{
-  
   width: fit-content;
   border-radius: 10px;
   padding-left: 5px;
@@ -401,8 +395,11 @@ button:hover{
   background-color: rgba(141, 141, 141, 0.496);
   width: fit-content;
   border-radius: 10px; 
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 15px;
 }
 
 #modal.hide{
